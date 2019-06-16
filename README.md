@@ -27,6 +27,10 @@
 1.3 搭建路由和数据模型
 
 #### 2. 登录注册接口
+> express的body-parser中间件
+> bcrypt加密模块
+> jsonwbtoken
+
 
 #### 3. Passport验证
 
