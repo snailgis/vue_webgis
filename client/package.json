@@ -1,0 +1,32 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "start": "npm run serve"
+  },
+  "dependencies": {
+    "core-js": "^2.6.5",
+    "element-ui": "^2.9.1",
+    "jwt-decode": "^2.2.0",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-service": "^3.8.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

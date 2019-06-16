@@ -29,10 +29,16 @@
 #### 2. 登录注册接口
 > express的body-parser中间件
 > bcrypt加密模块
-> jsonwbtoken
+> jsonwebtoken
+
+获取token(获取数据的令牌/jsonwebtoken)-----验证token（passport/passport-jwt）
 
 
 #### 3. Passport验证
+
+#### 4. 前后端连载
+
+
 
 
 
