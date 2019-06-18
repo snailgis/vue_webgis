@@ -2,7 +2,7 @@
     <div class="register">
         <section class="form_container">
             <div class="manage_tip">
-                <span class="title">WebGIS二次开发系统</span>
+                <span class="title">WebGIS DEMO展示系统</span>
             </div>
             <el-form :model="registerUser" :rules="rules" class="registerForm" ref="registerForm" label-width="80px">
                 <el-form-item label="用户名" prop="name">
@@ -62,12 +62,7 @@ export default {
         ],
         password2: [
           { required: true, message: "确认密码不能为空", trigger: "blur" },
-          {
-            min: 6,
-            max: 30,
-            message: "长度在 6 到 30 个字符",
-            trigger: "blur"
-          },
+          { min: 6, max: 30, message: "长度在 6 到 30 个字符", trigger: "blur" },
           { validator: validatePass2, trigger: "blur" }
         ]
       }
@@ -103,7 +98,7 @@ export default {
   position: relative;
   width: 100%;
   height: 100%;
-  background: url(../assets/bg1.jpg) no-repeat center center;
+  background: url(../assets/bg.jpg) no-repeat center center;
   background-size: 100% 100%;
 }
 .form_container {
@@ -119,7 +114,7 @@ export default {
 .form_container .manage_tip .title {
   font-family: "Microsoft YaHei";
   font-weight: bold;
-  font-size: 26px;
+  font-size: 28px;
   color: #fff;
 }
 .registerForm {

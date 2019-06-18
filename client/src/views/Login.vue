@@ -2,15 +2,9 @@
   <div class="login">
     <section class="form_container">
       <div class="manage_tip">
-        <span class="title">WebGIS二次开发系统</span>
+        <span class="title">WebGIS DEMO展示系统</span>
       </div>
-      <el-form
-        :model="loginUser"
-        :rules="rules"
-        ref="loginForm"
-        class="loginForm"
-        label-width="60px"
-      >
+      <el-form :model="loginUser" :rules="rules" ref="loginForm" class="loginForm" label-width="60px">
         <el-form-item label="邮箱" prop="email">
           <el-input v-model="loginUser.email" placeholder="请输入邮箱"></el-input>
         </el-form-item>
@@ -32,7 +26,7 @@
 </template>
 
 <script>
-import jwt_decode from 'jwt-decode'
+import jwt_decode from 'jwt-decode' //解析token的模块
 
 export default {
   name: "login",
@@ -73,7 +67,7 @@ export default {
               //解析token
               const decode = jwt_decode(token)
               console.log(decode)
-               // 存储数据到VUEX中
+               // 存储数据到VUEX中 
               this.$store.dispatch("setIsAutnenticated", !this.isEmpty(decode))
               this.$store.dispatch("setUser", decode)
 
@@ -103,7 +97,7 @@ export default {
   position: relative;
   width: 100%;
   height: 100%;
-  background: url(../assets/bg1.jpg) no-repeat center center;
+  background: url(../assets/bg.jpg) no-repeat center center;
   background-size: 100% 100%;
 }
 .form_container {
@@ -119,7 +113,7 @@ export default {
 .form_container .manage_tip .title {
   font-family: "Microsoft YaHei";
   font-weight: bold;
-  font-size: 26px;
+  font-size: 28px;
   color: #fff;
 }
 .loginForm {
