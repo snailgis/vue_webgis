@@ -5,6 +5,9 @@ import Register from './views/Register.vue'
 import Notfound from './views/404.vue'
 import Login from './views/Login.vue'
 import Home from './views/Home.vue'
+import MapHome from './views/MapHome.vue'
+
+import ArcGIS_Home from './views/ArcGIS/ArcGIS_Home'
 
 Vue.use(Router)
 
@@ -22,7 +25,9 @@ const router = new Router({
       component: Index,
       children: [        
         {path:'', component: Home},
-        {path:'/home', name:'home', component: Home}
+        {path:'/home', name:'home', component: Home},
+        {path: '/map', name: 'map', component: MapHome},
+        {path: '/arcgismap', name: 'arcgismap', component: ArcGIS_Home},
     ]
     },
     {

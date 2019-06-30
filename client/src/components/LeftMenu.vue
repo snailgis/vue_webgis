@@ -53,8 +53,8 @@ export default {
         {
           icon: "fa-arcgis",
           name: "ArcGIS",
-          path: "arcgis",
-          children: [{ path: "Demo 1", name: "Demo 1" }]
+          path: "ArcGIS",
+          children: [{ path: "arcgismap", name: "ArcGIS门户地图" }]
         }
       ]
     };
