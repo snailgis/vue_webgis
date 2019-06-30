@@ -1,3 +1,10 @@
+## 运行代码
+1. cd client
+2. npm install (客户端代码中安装依赖)
+3. cd ../
+4. npm run dev (前后端连载，同时启动前后端)
+
+
 ##  vue + node + WebGIS项目说明：
 
 ### 实践目的：基于VUE框架使用模块化编程方式实现WebGIS的开发
@@ -28,7 +35,9 @@
 
 #### 2. 登录注册接口
 > express的body-parser中间件
+
 > bcrypt加密模块
+
 > jsonwebtoken
 
 获取token(获取数据的令牌/jsonwebtoken)-----验证token（passport/passport-jwt）
