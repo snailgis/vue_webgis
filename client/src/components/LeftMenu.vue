@@ -9,7 +9,7 @@
                     </el-menu-item>
                 </router-link>
                 <router-link to="/map">
-                    <el-menu-item>
+                    <el-menu-item index='1'>
                         <i class="fa fa-margin fa-server"></i>
                         <span slot="title">地图门户</span>
                     </el-menu-item>
