@@ -53,4 +53,4 @@
 
 
 
-![](D:\program\Vue\vue-webgis\client\src\assets\demo1.png)
+![](https://github.com/snailgis/vue_webgis/blob/master/client/src/assets/demo1.png)
