@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-import XYZ from "../../../node_modules/ol/source/XYZ";
+import XYZ from "ol/source/XYZ";
 
 // let source_google, source_googledx, source_googlesat; //定义Google地图源地址
 // var source_baidu, source_baidusat, source_baidusatlabel;  //定义百度地图原地址

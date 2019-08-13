@@ -7,7 +7,11 @@ import Login from './views/Login.vue'
 import Home from './views/Home.vue'
 import MapHome from './views/MapHome.vue'
 
+import Ol_ClusterMap from './components/OpenLayers/Ol_ClusterMap'
+
 import ArcGIS_Home from './views/ArcGIS/ArcGIS_Home'
+import Ags_BaseMap from './components/ArcGIS/Ags_BaseMap'
+import Ags_DrawMap from './components/ArcGIS/Ags_DrawMap'
 
 Vue.use(Router)
 
@@ -23,11 +27,14 @@ const router = new Router({
       path: '/index',
       name: 'index',
       component: Index,
-      children: [        
+      children: [
         {path:'', component: Home},
         {path:'/home', name:'home', component: Home},
         {path: '/map', name: 'map', component: MapHome},
+        {path: '/ol_clustermap', name: 'ol_clustermap', component: Ol_ClusterMap},
         {path: '/arcgismap', name: 'arcgismap', component: ArcGIS_Home},
+        {path: '/ags_basemap', name: 'ags_basemap', component: Ags_BaseMap},
+        {path: '/ags_drawmap', name: 'ags_drawmap', component: Ags_DrawMap}
     ]
     },
     {

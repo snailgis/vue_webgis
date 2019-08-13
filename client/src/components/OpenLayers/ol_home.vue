@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import Map from "../../../node_modules/ol/Map";
-import View from "../../../node_modules/ol/View";
-import TileLayer from "../../../node_modules/ol/layer/Tile";
-import { OSM, TileArcGISRest } from "../../../node_modules/ol/source";
-import XYZ from "../../../node_modules/ol/source/XYZ";
-import { transform } from "../../../node_modules/ol/proj";
+import Map from "ol/Map";
+import View from "ol/View";
+import TileLayer from "ol/layer/Tile";
+import { OSM, TileArcGISRest } from "ol/source";
+import XYZ from "ol/source/XYZ";
+import { transform } from "ol/proj";
 
 
 export default {
@@ -112,29 +112,46 @@ export default {
                 return '';
             }
         }
-    }),
-    googledz: new XYZ({
-    tileUrlFunction: function (tileCoord) {
-        if (tileCoord) {
-            var z = tileCoord[0];
-            var x = tileCoord[1];
-            var y = -tileCoord[2] - 1;
-            var s = "Galileo".substring(0, ((3 * x + y) % 8));
-            return "http://mt" + (x % 4) + ".google.cn/vt/lyrs=t,m&hl=zh-CN&gl=cn&" + "x=" + x + "&" + "y=" + y + "&" + "z=" + z + "&" + "s=" + s;
-        } else {
-            return '';
+      }),
+      googledz: new XYZ({
+        tileUrlFunction: function (tileCoord) {
+            if (tileCoord) {
+                var z = tileCoord[0];
+                var x = tileCoord[1];
+                var y = -tileCoord[2] - 1;
+                var s = "Galileo".substring(0, ((3 * x + y) % 8));
+                return "http://mt" + (x % 4) + ".google.cn/vt/lyrs=t,m&hl=zh-CN&gl=cn&" + "x=" + x + "&" + "y=" + y + "&" + "z=" + z + "&" + "s=" + s;
+            } else {
+                return '';
+            }
         }
-    }
-    }),
-    proj: "EPSG:4326",//定义wgs84地图坐标系
-    proj_m: "EPSG:3857", //定义墨卡托地图坐标系
+      }),
+      proj: "EPSG:4326",//定义wgs84地图坐标系
+      proj_m: "EPSG:3857", //定义墨卡托地图坐标系
+      map: null,
+      mapLayer: null,
+      mapLayerlabel: null,
     };
   },
   created() {
-    // this.createMap()
+    //this.createMap()
   },
   methods: {
-    createMap(init) {
+    /******************地图切换方法***************/
+     changeBaseMap: function(value) {
+          console.log(value)
+          this.mapLayer.setSource(this.value);
+          // var cnt = sourcelist.length;
+          // if (1 == cnt) {
+          //     mapLayer.setSource(sourcelist[0]);
+          //     mapLayerlabel.setSource(null);
+          // } else if (2 == cnt) {
+          //     mapLayer.setSource(sourcelist[0]);
+          //     mapLayerlabel.setSource(sourcelist[1]);
+          // }
+        }
+  },
+  mounted() {
       //初始化map对象
       let map = new Map({
         target: "olmap",
@@ -159,25 +176,7 @@ export default {
       //将图层加载到地图对象
       map.addLayer(mapLayer);
       map.addLayer(mapLayerlabel);
-    },
-
-    /******************地图切换方法***************/
-     changeBaseMap(value) {
-            console.log(value)
-            mapLayer.setSource(this.value);
-            // var cnt = sourcelist.length;
-            // if (1 == cnt) {
-            //     mapLayer.setSource(sourcelist[0]);
-            //     mapLayerlabel.setSource(null);
-            // } else if (2 == cnt) {
-            //     mapLayer.setSource(sourcelist[0]);
-            //     mapLayerlabel.setSource(sourcelist[1]);
-            // }
-        }
-  },
-  mounted() {
-    this.createMap();
-  }
+    }
 };
 </script>
 

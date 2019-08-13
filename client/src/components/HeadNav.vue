@@ -73,7 +73,7 @@ export default {
   height: 60px;
   min-width: 600px;
   padding: 5px;
-  background: #5d7dae;
+  background: #324057;
   color: #fff;
   border-bottom: 1px solid #1f2d3d;
 }

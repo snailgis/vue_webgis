@@ -6,13 +6,13 @@
 
 ## 效果展示
 **1.登陆**
-![](https://github.com/snailgis/vue_webgis/blob/master/client/src/assets/readmeImg/loginPage.png)
+![](https://gitee.com/woniugis/vue_webgis/blob/master/client/src/assets/readmeImg/loginPage.png)
 **2.首页**
-![](https://github.com/snailgis/vue_webgis/blob/master/client/src/assets/readmeImg/homePage.png)
+![](https://gitee.com/woniugis/vue_webgis/blob/master/client/src/assets/readmeImg/homePage.png)
 **3.地图门户**
-![](https://github.com/snailgis/vue_webgis/blob/master/client/src/assets/readmeImg/mapHomePage.png)
+![](https://gitee.com/woniugis/vue_webgis/blob/master/client/src/assets/readmeImg/mapHomePage.png)
 **4.ArcGIS地图门户**
-![](https://github.com/snailgis/vue_webgis/blob/master/client/src/assets/readmeImg/arcgisHomePage.png)
+![](https://gitee.com/woniugis/vue_webgis/blob/master/client/src/assets/readmeImg/arcgisHomePage.png)
 
 ！！！后续地图功能正在逐步完善，将尝试使用多种 map api 和集成 gis 相关库
 ##  vue + node + WebGIS项目说明：
@@ -60,8 +60,3 @@
 
 
 #### 4. 前后端连载
-
-<<<<<<< HEAD
-![](https://github.com/snailgis/vue_webgis/blob/master/client/src/assets/demo1.png)
-=======
->>>>>>> dev
