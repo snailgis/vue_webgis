@@ -99,8 +99,8 @@ var streetmap = function () {
 
 var mapconfig = {
     x: 108.40,     //中心点经度和纬度
-    y: 34.75,
-    zoom: 8,          //地图缩放级别
+    y: 35.75,
+    zoom: 7,          //地图缩放级别
     streetmap: streetmap
 };
 

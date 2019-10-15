@@ -8,6 +8,7 @@ import Home from './views/Home.vue'
 import MapHome from './views/MapHome.vue'
 
 import Ol_ClusterMap from './components/OpenLayers/Ol_ClusterMap'
+import ol_SuperClusterMap from './components/OpenLayers/ol_SuperClusterMap'
 
 import ArcGIS_Home from './views/ArcGIS/ArcGIS_Home'
 import Ags_BaseMap from './components/ArcGIS/Ags_BaseMap'
@@ -31,6 +32,7 @@ const router = new Router({
         {path:'', component: Home},
         {path:'/home', name:'home', component: Home},
         {path: '/map', name: 'map', component: MapHome},
+        {path: '/ol_superclustermap', name: 'ol_superclustermap', component: ol_SuperClusterMap},
         {path: '/ol_clustermap', name: 'ol_clustermap', component: Ol_ClusterMap},
         {path: '/arcgismap', name: 'arcgismap', component: ArcGIS_Home},
         {path: '/ags_basemap', name: 'ags_basemap', component: Ags_BaseMap},

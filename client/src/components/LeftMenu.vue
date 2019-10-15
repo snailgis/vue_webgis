@@ -51,18 +51,21 @@ export default {
           icon: "fa-openlayers",
           name: "Openlayers",
           path: "openlayers",
-          children: [{ path: "ol_clustermap", name: "统计聚类" }]
+          children: [
+            { path: "ol_superclustermap", name: "聚类" },
+            { path: "ol_clustermap", name: "统计聚类" }
+          ]
         },
         {
           icon: "fa-arcgis",
           name: "ArcGIS",
           path: "ArcGIS",
           children: [
-                      { path: "arcgismap", name: "ArcGIS门户地图" },
-                      { path: "ags_basemap", name: "基础地图"},
-                      { path: "ags_tilemap", name: "切片地图"},
-                      { path: "ags_drawmap", name: "绘制要素"}
-                    ]
+            { path: "arcgismap", name: "ArcGIS门户地图" },
+            { path: "ags_basemap", name: "基础地图"},
+            { path: "ags_tilemap", name: "切片地图"},
+            { path: "ags_drawmap", name: "绘制要素"}
+          ]
         }
       ]
     };
