@@ -15,7 +15,7 @@ import XYZ from "ol/source/XYZ";
 // var source_sqlite_offline, source_sqlitesat_offline;  //加载离线sqlite数据库地图
 
 //********************加载在线Google电子地图*************************//
-export let source_google = new XYZ({
+let source_google = new XYZ({
     tileUrlFunction: function (tileCoord) {
         if (tileCoord) {
             var z = tileCoord[0];
@@ -209,7 +209,7 @@ let source_tiandi = new XYZ({
             var z = tileCoord[0];
             var x = tileCoord[1];
             var y = -tileCoord[2] - 1;
-            return "http://t1.tianditu.com/DataServer?T=vec_w&x=" + x + "&y=" + y + "&l=" + z;
+            return "https://t1.tianditu.gov.cn/DataServer?tk=5730f1a9e7de7c8f39c7e45725b863da&T=vec_w&x=" + x + "&y=" + y + "&l=" + z;
         } else {
             return '';
         }
@@ -223,7 +223,7 @@ let source_tiandisat = new XYZ({
             var z = tileCoord[0];
             var x = tileCoord[1];
             var y = -tileCoord[2] - 1;
-            return "http://t1.tianditu.com/DataServer?T=img_w&x=" + x + "&y=" + y + "&l=" + z;
+            return "https://t1.tianditu.gov.cn/DataServer?tk=5730f1a9e7de7c8f39c7e45725b863da&T=img_w&x=" + x + "&y=" + y + "&l=" + z;
         } else {
             return '';
         }
@@ -323,3 +323,92 @@ let source_sqlitesat_offline = new XYZ({
         }
     }
 });
+
+let mapLabel = [
+    {
+        label: '在线Google地图',
+        options: [
+            {
+                value: 'googledz',
+                label: '谷歌电子地图'
+            },
+            {
+                value: 'googledx',
+                label: '谷歌地形图'
+            },
+            {
+                value: 'googlewx',
+                label: '谷歌卫星图'
+            }
+        ]
+    },
+    {
+        label: '在线天地图',
+        options: [
+            {
+                value: 'tdtdz',
+                label: '天地图电子地图'
+            },
+            {
+                value: 'tdtwx',
+                label: '天地图卫星图'
+            }
+        ]
+    },
+    {
+        label: '在线百度地图',
+        options: [
+            {
+                value: 'baidudz',
+                label: '百度电子地图'
+            },
+            {
+                value: 'baiduwx',
+                label: '百度卫星图'
+            }
+        ]
+    },
+    {
+        label: '在线高德地图',
+        options: [
+            {
+                value: 'gaodedz',
+                label: '高德电子地图'
+            },
+            {
+                value: 'gaodewx',
+                label: '高德卫星图'
+            }
+        ]
+    },
+    {
+        label: '在线腾讯地图',
+        options: [
+            {
+                value: 'qqmapdz',
+                label: '腾讯电子地图'
+            },
+            {
+                value: 'qqmapdx',
+                label: '腾讯地形图'
+            },
+            {
+                value: 'qqmapwx',
+                label: '腾讯卫星图'
+            }
+        ]
+    },
+    {
+        label: '离线地图'
+    }
+]
+
+let maplist ={
+    basemapLabel: mapLabel,
+    googledz: source_google,
+    googledx: source_googledx,
+    googlewx: source_googlesat,
+    tdtdz: source_tiandi,
+    tdtwx: source_tiandisat
+}
+export default maplist
