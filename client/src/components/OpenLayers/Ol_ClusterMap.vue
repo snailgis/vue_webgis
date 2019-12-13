@@ -16,14 +16,14 @@
 import 'ol/ol.css'
 import { Map, View } from 'ol'
 import mapconfig from '../../config/olmapConfig'
-import clustermap from './clustermap'
+// import clustermap from './clustermap'
 
 export default {
 	data() {
 		return {
 			map: null,
 			view: null,
-			clustermapLayer: null
+// 			clustermapLayer: null
 		}
 	},
 	created() {},

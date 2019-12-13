@@ -7,7 +7,7 @@ import { Icon, Text, Fill, Stroke, Circle, Style } from 'ol/style'
 
 function getDataByAPI(level, minlon, maxlon, minlat, maxlat, callback) {
     let dataArray = []
-    let baseUrl = `http://61.185.20.20:2300/product-xczx/api/weChat/listAreaByLevel?flag=2&level=${level}&x1=${minlon}&x2=${maxlon}&y1=${minlat}&y2=${maxlat}`
+    let baseUrl = ``
     $.ajax({
         async: false,
         url: baseUrl,
@@ -119,7 +119,7 @@ function addMarkers(markers) {
                     new Style({
                         image: new Icon({
                             // src: '../assets/img/locationRed.png',
-                            src: 'http://fp1.xys.gov.cn/jzfp_ol/assets/img/locationRed.png',
+                            src: '',
                             anchor: [0.5, 1.0]
                         }),
                         text: new Text({
@@ -144,7 +144,7 @@ function addMarkers(markers) {
                     new Style({
                         image: new Icon({
                             // src: '../assets/img/locationGreen.png',
-                            src: 'http://fp1.xys.gov.cn/jzfp_ol/assets/img/locationGreen.png',
+                            src: '',
                             anchor: [0.5, 1.0]
                         }),
                         text: new Text({
