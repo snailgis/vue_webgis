@@ -32,7 +32,15 @@ export default {
 			googledx: mapSources.googledx,
 			googlewx: mapSources.googlewx,
       tdtdz: mapSources.tdtdz,
+      tdtlabeldz: mapSources.tdtlabeldz,
       tdtwx: mapSources.tdtwx,
+      tdtlabelwx: mapSources.tdtlabelwx,
+      baidudz: mapSources.baidudz,
+      baiduwx: mapSources.baiduwx,
+      baidulabelwx: mapSources.baidulabelwx,
+      gaodedz: mapSources.gaodedz,
+      gaodewx: mapSources.gaodewx,
+      gaodelabelwx: mapSources.gaodelabelwx,
 			proj: 'EPSG:4326', //定义wgs84地图坐标系
 			proj_m: 'EPSG:3857', //定义墨卡托地图坐标系
 			map: null,
@@ -80,6 +88,7 @@ export default {
 		changeBaseMap: function(value) {
       console.log(value)
       this.map.removeLayer(this.mapLayer)
+      this.map.removeLayer(this.mapLayerlabel)
 			switch (value) {
 				case 'googledz':
           	this.mapLayer = new TileLayer({
@@ -107,14 +116,62 @@ export default {
             source: this.tdtdz,
             projection: this.proj
           })
+          this.mapLayerlabel = new TileLayer({
+            source: this.tdtlabeldz,
+            projection: this.proj
+          })
           this.map.addLayer(this.mapLayer)
+          this.map.addLayer(this.mapLayerlabel)
           break;
         case 'tdtwx':
           this.mapLayer = new TileLayer({
             source: this.tdtwx,
             projection: this.proj
           })
+          this.mapLayerlabel = new TileLayer({
+            source: this.tdtlabelwx,
+            projection: this.proj
+          })
           this.map.addLayer(this.mapLayer)
+          this.map.addLayer(this.mapLayerlabel)
+          break;
+        case 'gaodedz':
+          this.mapLayer = new TileLayer({
+            source: this.gaodedz,
+            projection: this.proj
+          })
+          this.map.addLayer(this.mapLayer)
+          break;
+        case 'gaodewx':
+          this.mapLayer = new TileLayer({
+            source: this.gaodewx,
+            projection: this.proj
+          })
+          this.mapLayerlabel = new TileLayer({
+            source: this.gaodelabelwx,
+            projection: this.proj
+          })
+          this.map.addLayer(this.mapLayer)
+          this.map.addLayer(this.mapLayerlabel)
+          break;
+        case 'baidudz':
+          this.mapLayer = new TileLayer({
+            source: this.baidudz,
+            projection: this.proj
+          })
+          this.map.addLayer(this.mapLayer)
+          break;
+        case 'baiduwx':
+          this.mapLayer = new TileLayer({
+            source: this.baiduwx,
+            projection: this.proj
+          })
+          this.mapLayerlabel = new TileLayer({
+            source: this.baidulabelwx,
+            projection: this.proj
+          })
+          this.map.addLayer(this.mapLayer)
+          this.map.addLayer(this.mapLayerlabel)
           break;
 			}
 		}

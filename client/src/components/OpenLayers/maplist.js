@@ -209,7 +209,7 @@ let source_tiandi = new XYZ({
             var z = tileCoord[0];
             var x = tileCoord[1];
             var y = -tileCoord[2] - 1;
-            return "https://t1.tianditu.gov.cn/DataServer?tk=5730f1a9e7de7c8f39c7e45725b863da&T=vec_w&x=" + x + "&y=" + y + "&l=" + z;
+            return 'https://t0.tianditu.gov.cn/DataServer?tk=5730f1a9e7de7c8f39c7e45725b863da&T=vec_w&x=' + x + '&y=' + y + '&l=' + z;
         } else {
             return '';
         }
@@ -223,7 +223,7 @@ let source_tiandisat = new XYZ({
             var z = tileCoord[0];
             var x = tileCoord[1];
             var y = -tileCoord[2] - 1;
-            return "https://t1.tianditu.gov.cn/DataServer?tk=5730f1a9e7de7c8f39c7e45725b863da&T=img_w&x=" + x + "&y=" + y + "&l=" + z;
+            return 'https://t0.tianditu.gov.cn/DataServer?tk=5730f1a9e7de7c8f39c7e45725b863da&T=img_w&x=' + x + '&y=' + y + '&l=' + z;
         } else {
             return '';
         }
@@ -231,13 +231,25 @@ let source_tiandisat = new XYZ({
 });
 
 //天地图labels图层,天地图所有图层都要用
-let source_tiandilabel = new XYZ({
+let source_tdtlabeldz = new XYZ({
     tileUrlFunction: function (tileCoord) {
         if (tileCoord) {
             var z = tileCoord[0];
             var x = tileCoord[1];
             var y = -tileCoord[2] - 1;
-            return "http://t4.tianditu.com/DataServer?T=cva_w&x=" + x + "&y=" + y + "&l=" + z;
+            return 'https://t0.tianditu.gov.cn/DataServer?tk=5730f1a9e7de7c8f39c7e45725b863da&T=cva_w&x=' + x + '&y=' + y + '&l=' + z;
+        } else {
+            return '';
+        }
+    }
+});
+let source_tdtlabelwx = new XYZ({
+    tileUrlFunction: function (tileCoord) {
+        if (tileCoord) {
+            var z = tileCoord[0];
+            var x = tileCoord[1];
+            var y = -tileCoord[2] - 1;
+            return 'https://t0.tianditu.gov.cn/DataServer?tk=5730f1a9e7de7c8f39c7e45725b863da&T=cia_w&x=' + x + '&y=' + y + '&l=' + z;
         } else {
             return '';
         }
@@ -409,6 +421,14 @@ let maplist ={
     googledx: source_googledx,
     googlewx: source_googlesat,
     tdtdz: source_tiandi,
-    tdtwx: source_tiandisat
+    tdtlabeldz: source_tdtlabeldz,
+    tdtwx: source_tiandisat,
+    tdtlabelwx: source_tdtlabelwx,
+    baidudz: source_baidu,
+    baiduwx: source_baidusat,
+    baidulabelwx: source_baidusatlabel,
+    gaodedz: source_gaode,
+    gaodewx: source_gaodesat,
+    gaodelabelwx: source_gaodesatlabel
 }
 export default maplist
