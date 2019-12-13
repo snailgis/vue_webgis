@@ -41,6 +41,11 @@ export default {
       gaodedz: mapSources.gaodedz,
       gaodewx: mapSources.gaodewx,
       gaodelabelwx: mapSources.gaodelabelwx,
+      qqmapdz: mapSources.qqmapdz,
+      qqmapdx: mapSources.qqmapdx,
+      qqmaplabledx: mapSources.qqmaplabledx,
+      qqmapwx: mapSources.qqmapwx,
+      qqmaplablewx: mapSources.qqmaplablewx,
 			proj: 'EPSG:4326', //定义wgs84地图坐标系
 			proj_m: 'EPSG:3857', //定义墨卡托地图坐标系
 			map: null,
@@ -168,6 +173,37 @@ export default {
           })
           this.mapLayerlabel = new TileLayer({
             source: this.baidulabelwx,
+            projection: this.proj
+          })
+          this.map.addLayer(this.mapLayer)
+          this.map.addLayer(this.mapLayerlabel)
+          break;
+        case 'qqmapdz':
+          this.mapLayer = new TileLayer({
+            source: this.qqmapdz,
+            projection: this.proj
+          })
+          this.map.addLayer(this.mapLayer)
+          break;
+        case 'qqmapdx':
+          this.mapLayer = new TileLayer({
+            source: this.qqmapdx,
+            projection: this.proj
+          })
+          this.mapLayerlabel = new TileLayer({
+            source: this.qqmaplabledx,
+            projection: this.proj
+          })
+          this.map.addLayer(this.mapLayer)
+          this.map.addLayer(this.mapLayerlabel)
+          break;
+        case 'qqmapwx':
+          this.mapLayer = new TileLayer({
+            source: this.qqmapwx,
+            projection: this.proj
+          })
+          this.mapLayerlabel = new TileLayer({
+            source: this.qqmaplablewx,
             projection: this.proj
           })
           this.map.addLayer(this.mapLayer)

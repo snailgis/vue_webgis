@@ -96,7 +96,7 @@ let source_qqdxlabel = new XYZ({
             var x = tileCoord[1];
             var y = -tileCoord[2] - 1;
             y = parseInt(Math.pow(2, z)) - 1 - y;
-            return "http://rt" + (x % 4) + ".map.gtimg.com/realtimerender?z=" + z + "&x=" + x + "&y=" + y + "&type=vector&styleid=2";
+            return "http://rt" + (x % 4) + ".map.gtimg.com/tile?z=" + z + "&x=" + x + "&y=" + y + "&type=vector&styleid=3&version=384";
         } else {
             return '';
         }
@@ -126,7 +126,7 @@ let source_qqsatlabel = new XYZ({
             var x = tileCoord[1];
             var y = -tileCoord[2] - 1;
             y = parseInt(Math.pow(2, z)) - 1 - y;
-            return "http://rt" + (x % 4) + ".map.gtimg.com/realtimerender?z=" + z + "&x=" + x + "&y=" + y + "&type=vector&styleid=1";
+            return "http://rt" + (x % 4) + ".map.gtimg.com/tile?z=" + z + "&x=" + x + "&y=" + y + "&styleid=2&version=384";
         } else {
             return '';
         }
@@ -429,6 +429,11 @@ let maplist ={
     baidulabelwx: source_baidusatlabel,
     gaodedz: source_gaode,
     gaodewx: source_gaodesat,
-    gaodelabelwx: source_gaodesatlabel
+    gaodelabelwx: source_gaodesatlabel,
+    qqmapdz: source_qq,
+    qqmapdx: source_qqdx,
+    qqmaplabledx: source_qqdxlabel,
+    qqmapwx: source_qqsat,
+    qqmaplablewx: source_qqsatlabel
 }
 export default maplist
