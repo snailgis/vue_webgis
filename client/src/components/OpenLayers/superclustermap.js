@@ -6,24 +6,32 @@ import VectorSource from 'ol/source/Vector'
 import Cluster from 'ol/source/Cluster'
 import { Circle as CircleStyle, Fill, Icon, Stroke, Style, Text } from 'ol/style'
 
+import jsondata from '../../assets/data/town.json'
+
 let features = []
 
-$.ajax({
-    async: false,
-    url: 'http://fp1.xys.gov.cn/jzfp_ol/libs/data/town.json',
-    type: 'get',
-    dataType: 'json',
-    success: function (geodata) {
-        for (let i = 0; i < geodata.length; i++) {
-            features[i] = new Feature(new Point([parseFloat(geodata[i].lng), parseFloat(geodata[i].lat)]))
-            features[i].set('id', geodata[i].area_code)
-            features[i].set('name', geodata[i].short_name)
-        }
-    },
-    error: function (err) {
-        console.log(err)
-    }
-})
+// $.ajax({
+//     async: false,
+//     url: jsondata,
+//     type: 'get',
+//     dataType: 'json',
+//     success: function (geodata) {
+//         for (let i = 0; i < geodata.length; i++) {
+//             features[i] = new Feature(new Point([parseFloat(geodata[i].lng), parseFloat(geodata[i].lat)]))
+//             features[i].set('id', geodata[i].area_code)
+//             features[i].set('name', geodata[i].short_name)
+//         }
+//     },
+//     error: function (err) {
+//         console.log(err)
+//     }
+// })
+
+for (let i = 0; i < jsondata.length; i++) {
+    features[i] = new Feature(new Point([parseFloat(jsondata[i].lng), parseFloat(jsondata[i].lat)]))
+    features[i].set('id', jsondata[i].area_code)
+    features[i].set('name', jsondata[i].short_name)
+}
 
 let source = new VectorSource({
     features: features

@@ -46,6 +46,10 @@ export default {
       qqmaplabledx: mapSources.qqmaplabledx,
       qqmapwx: mapSources.qqmapwx,
       qqmaplablewx: mapSources.qqmaplablewx,
+      geoqcs: mapSources.geoqcs,
+      geoqns: mapSources.geoqns,
+      geoqhs: mapSources.geoqhs,
+      geoqlh: mapSources.geoqlh,
 			proj: 'EPSG:4326', //定义wgs84地图坐标系
 			proj_m: 'EPSG:3857', //定义墨卡托地图坐标系
 			map: null,
@@ -208,6 +212,34 @@ export default {
           })
           this.map.addLayer(this.mapLayer)
           this.map.addLayer(this.mapLayerlabel)
+          break;
+        case 'geoqcs':
+          this.mapLayer = new TileLayer({
+            source: this.geoqcs,
+            projection: this.proj
+          })
+          this.map.addLayer(this.mapLayer)
+          break;
+        case 'geoqns':
+          this.mapLayer = new TileLayer({
+            source: this.geoqns,
+            projection: this.proj
+          })
+          this.map.addLayer(this.mapLayer)
+          break;
+        case 'geoqhs':
+          this.mapLayer = new TileLayer({
+            source: this.geoqhs,
+            projection: this.proj
+          })
+          this.map.addLayer(this.mapLayer)
+          break;
+        case 'geoqlh':
+          this.mapLayer = new TileLayer({
+            source: this.geoqlh,
+            projection: this.proj
+          })
+          this.map.addLayer(this.mapLayer)
           break;
 			}
 		}

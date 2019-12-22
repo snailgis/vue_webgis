@@ -53,6 +53,7 @@ export default {
           path: "openlayers",
           children: [
             { path: "ol_superclustermap", name: "聚类" },
+            { path: "ol_clipmap", name: "按区域裁剪地图"},
             { path: "ol_clustermap", name: "统计聚类" }
           ]
         },
