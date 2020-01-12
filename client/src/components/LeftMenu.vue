@@ -45,7 +45,9 @@ export default {
           icon: "fa-mapbox",
           name: "MapBox",
           path: "mapbox",
-          children: [{ path: "Demo 1", name: "Demo 1" }]
+          children: [
+            { path: "mapboxgl_3dbuilding", name: "3D建筑物" }
+          ]
         },
         {
           icon: "fa-openlayers",
@@ -54,7 +56,8 @@ export default {
           children: [
             { path: "ol_superclustermap", name: "聚类" },
             { path: "ol_clipmap", name: "按区域裁剪地图"},
-            { path: "ol_clustermap", name: "统计聚类" }
+            { path: "ol_clustermap", name: "统计聚类" },
+            { path: "ol_wfs", name: "WFS要素编辑"}
           ]
         },
         {

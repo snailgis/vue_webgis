@@ -3,7 +3,7 @@
         <el-row>
             <el-col :span="6" class='logo-container'>
                 <img src="../assets/earth.png" class='logo' alt="">
-                <span class='title'>  WebGIS DEMO地图展示系统</span>
+                <span class='title'>  WebGIS 地图展示系统</span>
             </el-col>
             <el-col :span='6' class="user">
                 <div class="userinfo">
