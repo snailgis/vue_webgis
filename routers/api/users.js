@@ -1,6 +1,6 @@
 // login & register
 const express = require('express')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcrypt') // 密码加密
 const jwt = require('jsonwebtoken')
 const passport = require('passport')
 
@@ -21,7 +21,7 @@ router.get('/test', (req, res) => {
 
 // 需要安装express中间件body-parser
 router.post('/register', (req, res) => {
-    //console.log(req.body)
+    // console.log(req.body)
     //查询数据库中是否存在邮箱
     User.findOne({ email: req.body.email })
         .then(user => {
