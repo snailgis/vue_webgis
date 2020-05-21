@@ -10,13 +10,14 @@ import MapHome from './views/MapHome.vue'
 import Ol_ClusterMap from './components/OpenLayers/Ol_ClusterMap'
 import ol_ClipMap from './components/OpenLayers/ol_ClipMap'
 import ol_SuperClusterMap from './components/OpenLayers/ol_SuperClusterMap'
-import ol_WFS from './components/OpenLayers/ol_wfs'
+import ol_FeatureEdit from './components/OpenLayers/ol_FeatureEdit'
 
 import ArcGIS_Home from './views/ArcGIS/ArcGIS_Home'
 import Ags_BaseMap from './components/ArcGIS/Ags_BaseMap'
 import Ags_DrawMap from './components/ArcGIS/Ags_DrawMap'
 
 import mapboxGL_3Dbuilding from './components/MapBox/mapboxGL_3Dbuilding'
+import mapboxGL_TDT3Dbuilding from './components/MapBox/mapboxGL_TDT3Dbuilding'
 
 Vue.use(Router)
 
@@ -39,11 +40,12 @@ const router = new Router({
         {path: '/ol_superclustermap', name: 'ol_superclustermap', component: ol_SuperClusterMap},
         {path: '/ol_clipmap', name: 'ol_clipmap', component: ol_ClipMap},
         {path: '/ol_clustermap', name: 'ol_clustermap', component: Ol_ClusterMap},
-        {path: '/ol_wfs', name: 'ol_wfs', component: ol_WFS},
+        {path: '/ol_FeatureEdit', name: 'ol_FeatureEdit', component: ol_FeatureEdit},
         {path: '/arcgismap', name: 'arcgismap', component: ArcGIS_Home},
         {path: '/ags_basemap', name: 'ags_basemap', component: Ags_BaseMap},
         {path: '/ags_drawmap', name: 'ags_drawmap', component: Ags_DrawMap},
-        {path: '/mapboxgl_3dbuilding', name: 'mapboxgl_3dbuilding', component: mapboxGL_3Dbuilding}
+        {path: '/mapboxgl_3dbuilding', name: 'mapboxgl_3dbuilding', component: mapboxGL_3Dbuilding},
+        {path: '/mapboxgl_tdtbuilding', name: 'mapboxgl_tdtbuilding', component: mapboxGL_TDT3Dbuilding}
       ]
     },
     {

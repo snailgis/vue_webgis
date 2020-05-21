@@ -13,6 +13,7 @@ import Fill from 'ol/style/Fill';
 import Style from 'ol/style/Style';
 import mapconfig from '../../config/olmapConfig'
 import superClusterMap from './superclustermap'
+import { transform } from 'ol/proj'
 
 import sxgeojson from '../../assets/data/xianyang.json'
 
@@ -21,7 +22,9 @@ export default {
 		return {
 			map: null,
             view: null,
-            superclusterLayer: null
+            superclusterLayer: null,
+            proj: 'EPSG:4326', //定义wgs84地图坐标系
+			proj_m: 'EPSG:3857', //定义墨卡托地图坐标系
 		}
 	},
 	created() {},
@@ -61,8 +64,8 @@ export default {
                 layers: [mapconfig.tilemap],
                 view: this.view
             })
-            this.superclusterLayer = superClusterMap.clusterLayer()
-            this.map.addLayer(this.superclusterLayer)
+            // this.superclusterLayer = superClusterMap.clusterLayer()
+            // this.map.addLayer(this.superclusterLayer)
         },
         clipMap: function(){
             let view = this.view

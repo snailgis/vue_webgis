@@ -46,7 +46,8 @@ export default {
           name: "MapBox",
           path: "mapbox",
           children: [
-            { path: "mapboxgl_3dbuilding", name: "3D建筑物" }
+            { path: "mapboxgl_3dbuilding", name: "3D建筑物" },
+            { path: "mapboxgl_tdtbuilding", name: "三维测试"}
           ]
         },
         {
@@ -57,7 +58,7 @@ export default {
             { path: "ol_superclustermap", name: "聚类" },
             { path: "ol_clipmap", name: "按区域裁剪地图"},
             { path: "ol_clustermap", name: "统计聚类" },
-            { path: "ol_wfs", name: "WFS要素编辑"}
+            { path: "ol_FeatureEdit", name: "要素编辑"}
           ]
         },
         {
@@ -65,7 +66,7 @@ export default {
           name: "ArcGIS",
           path: "ArcGIS",
           children: [
-            { path: "arcgismap", name: "ArcGIS门户地图" },
+            { path: "arcgismap", name: "ArcGIS地图（3D）" },
             { path: "ags_basemap", name: "基础地图"},
             { path: "ags_tilemap", name: "切片地图"},
             { path: "ags_drawmap", name: "绘制要素"}

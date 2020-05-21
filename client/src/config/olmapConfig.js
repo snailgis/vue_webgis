@@ -103,6 +103,12 @@ var tileMap = new TileLayer({
     })
 })
 
+var tdt = new TileLayer({
+    source: new XYZ({
+        url: 'http://t4.tianditu.gov.cn/DataServer?tk=5730f1a9e7de7c8f39c7e45725b863da&T=vec_c&x={x}&y={y}&l={z}' 
+    })
+})
+
 var mapconfig = {
     x: 108.40,     //中心点经度和纬度
     y: 35.75,
