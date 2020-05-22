@@ -12,6 +12,7 @@
   "author": "snailgis",
   "license": "ISC",
   "dependencies": {
+    "@mapbox/mapbox-gl-draw": "^1.1.2",
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
     "concurrently": "^4.1.0",
@@ -19,6 +20,8 @@
     "jquery": "^3.4.1",
     "jsonwebtoken": "^8.5.1",
     "less-loader": "^6.1.0",
+    "mapbox-gl-circle": "^1.6.5",
+    "mapbox-gl-draw-circle": "^1.1.1",
     "mongoose": "^5.6.0",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0"

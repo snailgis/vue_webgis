@@ -1,6 +1,6 @@
 <template>
     <!-- 侧边栏 -->
-    <el-aside :width="isCollapse?'64px':'200px'">
+    <el-aside :width="isCollapse?'64px':'180px'">
       <div class="toggle-button" @click="toggleCollapse">|||</div>
       <!-- 侧边栏菜单区域 -->
         <el-menu background-color="#324057" text-color="#fff" active-text-color="#409EFF"
@@ -54,6 +54,8 @@ export default {
           name: "MapBox",
           path: "mapbox",
           children: [
+            { path: "mapboxgl_initmap", name: "基础地图" },
+            { path: "mapboxgl_drawmap", name: "绘制地图" },
             { path: "mapboxgl_3dbuilding", name: "3D建筑物" },
             { path: "mapboxgl_tdtbuilding", name: "三维测试"}
           ]

@@ -175,13 +175,6 @@ export default {
 	top: 0;
 	text-align: left;
 	width: 100%;
-	height: 700px;
-}
-
-.mapselect {
-	position: absolute;
-	top: 3%;
-	right: 2%;
-	z-index: 2;
+	height: 100%;
 }
 </style>

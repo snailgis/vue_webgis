@@ -18,6 +18,8 @@ import Ags_DrawMap from './components/ArcGIS/Ags_DrawMap'
 
 import mapboxGL_3Dbuilding from './components/MapBox/mapboxGL_3Dbuilding'
 import mapboxGL_TDT3Dbuilding from './components/MapBox/mapboxGL_TDT3Dbuilding'
+import mapboxGL_InitMap from './components/MapBox/mapboxGL_InitMap'
+import mapboxGL_DrawMap from './components/MapBox/mapboxGL_DrawMap'
 
 Vue.use(Router)
 
@@ -34,8 +36,8 @@ const router = new Router({
       name: 'index',
       component: Index,
       children: [
-        {path:'', component: Home},
-        {path:'/home', name:'home', component: Home},
+        {path: '', component: Home},
+        {path: '/home', name:'home', component: Home},
         {path: '/map', name: 'map', component: MapHome},
         {path: '/ol_superclustermap', name: 'ol_superclustermap', component: ol_SuperClusterMap},
         {path: '/ol_clipmap', name: 'ol_clipmap', component: ol_ClipMap},
@@ -45,7 +47,9 @@ const router = new Router({
         {path: '/ags_basemap', name: 'ags_basemap', component: Ags_BaseMap},
         {path: '/ags_drawmap', name: 'ags_drawmap', component: Ags_DrawMap},
         {path: '/mapboxgl_3dbuilding', name: 'mapboxgl_3dbuilding', component: mapboxGL_3Dbuilding},
-        {path: '/mapboxgl_tdtbuilding', name: 'mapboxgl_tdtbuilding', component: mapboxGL_TDT3Dbuilding}
+        {path: '/mapboxgl_tdtbuilding', name: 'mapboxgl_tdtbuilding', component: mapboxGL_TDT3Dbuilding},
+        {path: '/mapboxgl_initmap', name: 'mapboxgl_initmap', component: mapboxGL_InitMap},
+        {path: '/mapboxgl_drawmap', name: 'mapboxgl_drawmap', component: mapboxGL_DrawMap}
       ]
     },
     {
