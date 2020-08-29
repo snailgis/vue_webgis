@@ -22,7 +22,7 @@
     "less-loader": "^6.1.0",
     "mapbox-gl-circle": "^1.6.5",
     "mapbox-gl-draw-circle": "^1.1.1",
-    "mongoose": "^5.6.0",
+    "mongoose": "^5.7.5",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0"
   }
