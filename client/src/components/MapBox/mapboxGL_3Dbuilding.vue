@@ -4,8 +4,9 @@
 
 <script>
 import mapboxgl from 'mapbox-gl'
-import '../../assets/css/mapbox-gl.css'
+// import '../../assets/css/mapbox-gl.css'
 import builddata from '../../assets/data/3dbuilding.json'
+import 'mapbox-gl/dist/mapbox-gl.css'
 
 export default {
 	name: 'mapboxgl_3dbuilding',

@@ -5,6 +5,7 @@
 import mapBoxGl from 'mapbox-gl'
 import MapboxCircle from 'mapbox-gl-circle'
 import mapSources from './mapstyles'
+import 'mapbox-gl/dist/mapbox-gl.css'
 export default {
 	data() {
 		return {
@@ -17,8 +18,7 @@ export default {
 	},
 	methods: {
 		init() {
-			mapBoxGl.accessToken =
-				'pk.eyJ1IjoibWFwYm94bWF4IiwiYSI6ImNqbnY4MHM3azA2ZmkzdnBnMThvNzRoZ28ifQ.IffqPZGkhcdPjnZ2dmSO6w'
+			// mapBoxGl.accessToken = 'pk.eyJ1IjoibWFwYm94bWF4IiwiYSI6ImNqbnY4MHM3azA2ZmkzdnBnMThvNzRoZ28ifQ.IffqPZGkhcdPjnZ2dmSO6w'
 			this.map = new mapBoxGl.Map({
 				container: 'map',
 				style: {
@@ -45,7 +45,7 @@ export default {
 			})
 
 			// map.addControl(new this.mbgl.GeolocateControl({ positionOptions: { enableHighAccuracy: true }, trackUserLocation: true }), 'top-left');
-			this.map.addControl(new mapBoxGl.NavigationControl(), 'top-left')
+			this.map.addControl(new mapBoxGl.NavigationControl(), 'top-right')
 			this.map.addControl(
 				new mapBoxGl.ScaleControl({ maxWidth: 80, unit: 'metric' }),
 				'bottom-right'
@@ -54,7 +54,7 @@ export default {
 				new mapBoxGl.FullscreenControl({
 					container: document.querySelector('map')
 				}),
-				'top-left'
+				'top-right'
 			)
 
 			var editableCircleOpts = {
@@ -98,7 +98,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css');
+/* @import url('https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css'); */
 #map {
 	/* position: absolute; */
 	left: 0;

@@ -5,6 +5,8 @@
 <script>
 import mapBoxGl from 'mapbox-gl'
 import mapSources from './mapstyles'
+import 'mapbox-gl/dist/mapbox-gl.css'
+
 export default {
     data(){
         return {
@@ -66,9 +68,9 @@ export default {
 			});
 
 			// map.addControl(new this.mbgl.GeolocateControl({ positionOptions: { enableHighAccuracy: true }, trackUserLocation: true }), 'top-left');
-			this.map.addControl(new mapBoxGl.NavigationControl(), 'top-left')
+			this.map.addControl(new mapBoxGl.NavigationControl(), 'top-right')
             this.map.addControl(new mapBoxGl.ScaleControl({ maxWidth: 80, unit: 'metric' }), 'bottom-right')
-            this.map.addControl(new mapBoxGl.FullscreenControl({ container: document.querySelector('map') }),'top-left')
+            this.map.addControl(new mapBoxGl.FullscreenControl({ container: document.querySelector('map') }),'top-right')
 
 			let size = 100
 			let pulsingDot = {
@@ -168,9 +170,9 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css');
+/* @import url('https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css'); */
 #map {
-	/* position: absolute; */
+	position: absolute;
 	left: 0;
 	top: 0;
 	text-align: left;

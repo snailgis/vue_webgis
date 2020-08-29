@@ -30,8 +30,8 @@ export default {
 .rightContainer {
   position: relative;
   top: 0;
-  left: 180px;
-  width: calc(100% - 180px);
+  left: 64px;
+  width: calc(100% - 64px);
   height: calc(100% - 71px);
   overflow: auto;
 }

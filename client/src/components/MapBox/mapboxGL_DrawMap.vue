@@ -17,7 +17,7 @@ import {
 	SimpleSelectMode
 } from 'mapbox-gl-draw-circle'
 import MapboxDraw from '@mapbox/mapbox-gl-draw'
-
+import 'mapbox-gl/dist/mapbox-gl.css'
 import mapSources from './mapstyles'
 export default {
 	data() {
@@ -60,7 +60,7 @@ export default {
 			})
 
 			// map.addControl(new this.mbgl.GeolocateControl({ positionOptions: { enableHighAccuracy: true }, trackUserLocation: true }), 'top-left');
-			this.map.addControl(new mapBoxGl.NavigationControl(), 'top-left')
+			this.map.addControl(new mapBoxGl.NavigationControl(), 'top-right')
 			this.map.addControl(
 				new mapBoxGl.ScaleControl({ maxWidth: 80, unit: 'metric' }),
 				'bottom-right'
@@ -69,7 +69,7 @@ export default {
 				new mapBoxGl.FullscreenControl({
 					container: document.querySelector('map')
 				}),
-				'top-left'
+				'top-right'
 			)
 
 			this.draw = new MapboxDraw({
@@ -100,7 +100,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css');
+/* @import url('https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css'); */
 @import url('https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.css');
 #map {
 	/* position: absolute; */
