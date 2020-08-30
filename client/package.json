@@ -8,8 +8,10 @@
     "start": "npm run serve"
   },
   "dependencies": {
+    "@deck.gl/mapbox": "^8.2.7",
     "axios": "^0.19.0",
     "core-js": "^2.6.5",
+    "deck.gl": "^8.2.7",
     "element-ui": "^2.9.1",
     "esri-loader": "^2.9.2",
     "jwt-decode": "^2.2.0",

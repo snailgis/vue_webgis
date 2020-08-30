@@ -7,7 +7,7 @@
 import 'ol/ol.css'
 import { Map, View } from 'ol'
 import mapconfig from '../../config/olmapConfig'
-import superClusterMap from './superclustermap'
+import superClusterMap from './modules/superclustermap'
 
 export default {
 	data() {

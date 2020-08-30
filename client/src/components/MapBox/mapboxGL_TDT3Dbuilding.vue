@@ -4,7 +4,7 @@
 </template>
 <script>
 import mapBoxGl from 'mapbox-gl'
-import mapSources from './mapstyles'
+import mapSources from './modules/mapstyles'
 import 'mapbox-gl/dist/mapbox-gl.css'
 
 export default {

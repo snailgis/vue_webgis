@@ -48,7 +48,7 @@ import { OSM, TileArcGISRest, Vector as VectorSource } from 'ol/source'
 import { Circle as CircleStyle, Fill, Stroke, Style } from 'ol/style'
 import XYZ from 'ol/source/XYZ'
 import { transform } from 'ol/proj'
-import mapSources from './maplist'
+import mapSources from './modules/maplist'
 
 export default {
 	components: {},

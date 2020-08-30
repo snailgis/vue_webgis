@@ -18,7 +18,7 @@ import {
 } from 'mapbox-gl-draw-circle'
 import MapboxDraw from '@mapbox/mapbox-gl-draw'
 import 'mapbox-gl/dist/mapbox-gl.css'
-import mapSources from './mapstyles'
+import mapSources from './modules/mapstyles'
 export default {
 	data() {
 		return {

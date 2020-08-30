@@ -4,7 +4,7 @@
 <script>
 import mapBoxGl from 'mapbox-gl'
 import MapboxCircle from 'mapbox-gl-circle'
-import mapSources from './mapstyles'
+import mapSources from './modules/mapstyles'
 import 'mapbox-gl/dist/mapbox-gl.css'
 export default {
 	data() {

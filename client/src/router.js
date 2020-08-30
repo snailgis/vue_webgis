@@ -20,6 +20,8 @@ import mapboxGL_3Dbuilding from './components/MapBox/mapboxGL_3Dbuilding'
 import mapboxGL_TDT3Dbuilding from './components/MapBox/mapboxGL_TDT3Dbuilding'
 import mapboxGL_InitMap from './components/MapBox/mapboxGL_InitMap'
 import mapboxGL_DrawMap from './components/MapBox/mapboxGL_DrawMap'
+import mapboxGL_GridLayerSence from './components/MapBox/mapboxGL_GridLayerSence'
+import mapboxGL_HexagonLayer from './components/MapBox/mapboxGL_HexagonLayer'
 
 Vue.use(Router)
 
@@ -49,7 +51,9 @@ const router = new Router({
         {path: '/mapboxgl_3dbuilding', name: 'mapboxgl_3dbuilding', component: mapboxGL_3Dbuilding},
         {path: '/mapboxgl_tdtbuilding', name: 'mapboxgl_tdtbuilding', component: mapboxGL_TDT3Dbuilding},
         {path: '/mapboxgl_initmap', name: 'mapboxgl_initmap', component: mapboxGL_InitMap},
-        {path: '/mapboxgl_drawmap', name: 'mapboxgl_drawmap', component: mapboxGL_DrawMap}
+        {path: '/mapboxgl_drawmap', name: 'mapboxgl_drawmap', component: mapboxGL_DrawMap},
+        {path: '/mapboxgl_gridmap', name: 'mapboxgl_gridmap', component: mapboxGL_GridLayerSence},
+        {path: '/mapboxgl_hexagonmap', name: 'mapboxgl_gridmap', component: mapboxGL_HexagonLayer}
       ]
     },
     {

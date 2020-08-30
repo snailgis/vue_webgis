@@ -57,7 +57,9 @@ export default {
             { path: "mapboxgl_initmap", name: "基础地图" },
             { path: "mapboxgl_drawmap", name: "绘制地图" },
             { path: "mapboxgl_3dbuilding", name: "3D建筑物" },
-            { path: "mapboxgl_tdtbuilding", name: "三维测试"}
+            { path: "mapboxgl_tdtbuilding", name: "三维测试"},
+            { path: "mapboxgl_gridmap", name: "网格可视化"},
+            { path: "mapboxgl_hexagonmap", name: "蜂窝图可视化"}
           ]
         },
         {

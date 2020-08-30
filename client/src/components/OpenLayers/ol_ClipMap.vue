@@ -12,7 +12,7 @@ import GeoJSON from 'ol/format/GeoJSON';
 import Fill from 'ol/style/Fill';
 import Style from 'ol/style/Style';
 import mapconfig from '../../config/olmapConfig'
-import superClusterMap from './superclustermap'
+import superClusterMap from './modules/superclustermap'
 import { transform } from 'ol/proj'
 
 import sxgeojson from '../../assets/data/xianyang.json'
@@ -83,7 +83,6 @@ export default {
             let styleVC = new Style({
                 fill: fillStyle
             })
-            console.log(tileMap)
             tileMap.on('precompose', function(event){
                 let ctx = event.context
                 let pixelRatio = event.frameState.pixelRatio

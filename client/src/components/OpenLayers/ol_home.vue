@@ -20,7 +20,7 @@ import TileLayer from 'ol/layer/Tile'
 import { OSM, TileArcGISRest } from 'ol/source'
 import XYZ from 'ol/source/XYZ'
 import { transform } from 'ol/proj'
-import mapSources from './maplist'
+import mapSources from './modules/maplist'
 
 export default {
 	components: {},
@@ -58,7 +58,8 @@ export default {
 		}
 	},
 	created() {
-		//this.createMap()
+    //this.createMap()
+    
 	},
 	mounted() {
     this.initMap()
