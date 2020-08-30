@@ -6,7 +6,7 @@ import VectorSource from 'ol/source/Vector'
 import Cluster from 'ol/source/Cluster'
 import { Circle as CircleStyle, Fill, Icon, Stroke, Style, Text } from 'ol/style'
 
-import jsondata from '../../assets/data/town.json'
+import jsondata from '../../../assets/data/town.json'
 
 let features = []
 
