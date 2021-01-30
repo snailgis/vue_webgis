@@ -82,12 +82,12 @@ export default {
       })
       //初始化地图图层
       this.mapLayer = new TileLayer({
-        source: this.googlewx,
+        source: this.tdtwx,
         projection: this.proj
       })
       //初始化标签图层
       this.mapLayerlabel = new TileLayer({
-        source: null,
+        source: this.tdtlabelwx,
         projection: this.proj
       })
       //将图层加载到地图对象
@@ -119,7 +119,12 @@ export default {
             source: this.googlewx,
             projection: this.proj
           })
+          this.mapLayerlabel = new TileLayer({
+            source: this.tdtlabeldz,
+            projection: this.proj
+          })
           this.map.addLayer(this.mapLayer)
+          this.map.addLayer(this.mapLayerlabel)
           break;
         case 'tdtdz':
           this.mapLayer = new TileLayer({

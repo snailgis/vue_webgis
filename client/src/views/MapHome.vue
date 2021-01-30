@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import olMap from '../components/OpenLayers/ol_Home'
+import olMap from '../views/OpenLayers/ol_Home'
 export default {
   components: {
     'ol-map': olMap

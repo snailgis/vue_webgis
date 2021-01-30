@@ -47,7 +47,8 @@ let source_googlesat = new XYZ({
             let x = tileCoord[1];
             let y = -tileCoord[2] - 1;
             let s = "Galileo".substring(0, ((3 * x + y) % 8));
-            return "http://mt" + (x % 4) + ".google.cn/vt/lyrs=s,m&hl=zh-CN&gl=cn&" + "x=" + x + "&" + "y=" + y + "&" + "z=" + z + "&" + "s=" + s;
+            // return "http://mt" + (x % 4) + ".google.cn/vt/lyrs=s,m&hl=zh-CN&gl=cn&" + "x=" + x + "&" + "y=" + y + "&" + "z=" + z + "&" + "s=" + s;
+            return "http://mt" + (x % 4) + ".google.cn/vt/lyrs=s&hl=zh-CN&gl=cn&" + "x=" + x + "&" + "y=" + y + "&" + "z=" + z + "&" + "s=" + s;
         } else {
             return '';
         }

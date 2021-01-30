@@ -7,21 +7,21 @@ import Login from './views/Login.vue'
 import Home from './views/Home.vue'
 import MapHome from './views/MapHome.vue'
 
-import ol_ClusterMap from './components/OpenLayers/ol_ClusterMap'
-import ol_ClipMap from './components/OpenLayers/ol_ClipMap'
-import ol_SuperClusterMap from './components/OpenLayers/ol_SuperClusterMap'
-import ol_FeatureEdit from './components/OpenLayers/ol_FeatureEdit'
+import ol_ClusterMap from './views/OpenLayers/ol_ClusterMap'
+import ol_ClipMap from './views/OpenLayers/ol_ClipMap'
+import ol_SuperClusterMap from './views/OpenLayers/ol_SuperClusterMap'
+import ol_FeatureEdit from './views/OpenLayers/ol_FeatureEdit'
 
 import Ags_Home from './views/ArcGIS/Ags_Home'
 import Ags_BaseMap from './components/ArcGIS/Ags_BaseMap'
 import Ags_DrawMap from './components/ArcGIS/Ags_DrawMap'
 
-import mapboxGL_3Dbuilding from './components/MapBox/mapboxGL_3Dbuilding'
-import mapboxGL_TDT3Dbuilding from './components/MapBox/mapboxGL_TDT3Dbuilding'
-import mapboxGL_InitMap from './components/MapBox/mapboxGL_InitMap'
-import mapboxGL_DrawMap from './components/MapBox/mapboxGL_DrawMap'
-import mapboxGL_GridLayerSence from './components/MapBox/mapboxGL_GridLayerSence'
-import mapboxGL_HexagonLayer from './components/MapBox/mapboxGL_HexagonLayer'
+import mapboxGL_3Dbuilding from './views/MapBox/mapboxGL_3Dbuilding'
+import mapboxGL_TDT3Dbuilding from './views/MapBox/mapboxGL_TDT3Dbuilding'
+import mapboxGL_InitMap from './views/MapBox/mapboxGL_InitMap'
+import mapboxGL_DrawMap from './views/MapBox/mapboxGL_DrawMap'
+import mapboxGL_GridLayerSence from './views/MapBox/mapboxGL_GridLayerSence'
+import mapboxGL_HexagonLayer from './views/MapBox/mapboxGL_HexagonLayer'
 
 Vue.use(Router)
 
