@@ -14,6 +14,8 @@
 ![](https://raw.githubusercontent.com/snailgis/vue_webgis/master/client/src/assets/readmeImg/loginPage.png)
 **地图首页，支持Google，天地图，高德，腾讯，Geoq，Arcgis等多源在线网络地图的切换**
 > Google地图公共影像已下架（2021年1月）
+> 调整原有代码view与components的混乱；MapBox地图组件封装，数据图层加载组件，地图底图切换组件；（2021.1.31）
+---
 ![](https://raw.githubusercontent.com/snailgis/vue_webgis/master/client/src/assets/readmeImg/mapHomePage.png)
 **3维建筑物地图，基于MapBoxGL加载GeoServer三维建筑物矢量切片**
 ![](https://raw.githubusercontent.com/snailgis/vue_webgis/master/client/src/assets/readmeImg/3Dbuilding.png)
