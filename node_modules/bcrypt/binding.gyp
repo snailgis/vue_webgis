@@ -7,13 +7,37 @@
         'src/bcrypt.cc',
         'src/bcrypt_node.cc'
       ],
-      'include_dirs' : [
-          "<!(node -e \"require('nan')\")"
+      'defines': [
+            '_GNU_SOURCE',
       ],
+      'cflags!': [ '-fno-exceptions' ],
+      'cflags_cc!': [ '-fno-exceptions' ],
+      'include_dirs' : [
+          "<!@(node -p \"require('node-addon-api').include\")"
+      ],
+      'dependencies': ["<!(node -p \"require('node-addon-api').gyp\")"],
       'conditions': [
-        [ 'OS=="win"', {
+        ['OS=="win"', {
+          "msvs_settings": {
+            "VCCLCompilerTool": {
+              "ExceptionHandling": 1
+            }
+          },
           'defines': [
             'uint=unsigned int',
+          ]
+        }],
+        ['OS=="mac"', {
+          'cflags+': ['-fvisibility=hidden'],
+          "xcode_settings": {
+            "CLANG_CXX_LIBRARY": "libc++",
+            'GCC_ENABLE_CPP_EXCEPTIONS': 'YES',
+            'GCC_SYMBOLS_PRIVATE_EXTERN': 'YES', # -fvisibility=hidden
+          }
+        }],
+        [ 'OS=="zos"', {
+          'cflags': [
+            '-qascii',
           ],
         }],
       ],

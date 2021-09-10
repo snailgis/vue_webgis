@@ -254,16 +254,16 @@ let source_tdtlabelwx = new XYZ({
 
 //********************geoq智图在线地图服务*************************//
 let source_geoq_ChinaOnlineCommunity = new XYZ({
-    url: 'http://map.geoq.cn/arcgis/rest/services/ChinaOnlineCommunity/MapServer/tile/{z}/{y}/{x}'
+    url: 'https://map.geoq.cn/arcgis/rest/services/ChinaOnlineCommunity/MapServer/tile/{z}/{y}/{x}'
 })
 let source_geoq_ChinaOnlineStreetGray = new XYZ({
-    url: 'http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetGray/MapServer/tile/{z}/{y}/{x}'
+    url: 'https://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetGray/MapServer/tile/{z}/{y}/{x}'
 })
 let source_geoq_ChinaOnlineStreetWarm = new XYZ({
-    url: 'http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetWarm/MapServer/tile/{z}/{y}/{x}'
+    url: 'https://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetWarm/MapServer/tile/{z}/{y}/{x}'
 })
 let source_geoq_ChinaOnlineStreetPurplishBlue = new XYZ({
-    url: 'http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetPurplishBlue/MapServer/tile/{z}/{y}/{x}'
+    url: 'https://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetPurplishBlue/MapServer/tile/{z}/{y}/{x}'
 })
 
 //********************加载离线arcgis瓦片地图*************************//
@@ -347,23 +347,23 @@ let source_sqlitesat_offline = new XYZ({
 });
 
 let mapLabel = [
-    {
-        label: '在线Google地图',
-        options: [
-            {
-                value: 'googledz',
-                label: '谷歌电子地图'
-            },
-            {
-                value: 'googledx',
-                label: '谷歌地形图'
-            },
-            {
-                value: 'googlewx',
-                label: '谷歌卫星图'
-            }
-        ]
-    },
+    // {
+    //     label: '在线Google地图',
+    //     options: [
+    //         {
+    //             value: 'googledz',
+    //             label: '谷歌电子地图'
+    //         },
+    //         {
+    //             value: 'googledx',
+    //             label: '谷歌地形图'
+    //         },
+    //         {
+    //             value: 'googlewx',
+    //             label: '谷歌卫星图'
+    //         }
+    //     ]
+    // },
     {
         label: '在线天地图',
         options: [

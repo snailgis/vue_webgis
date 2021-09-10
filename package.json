@@ -12,9 +12,10 @@
   "author": "snailgis",
   "license": "ISC",
   "dependencies": {
+    "@cgcs2000/mapbox-gl": "^2.3.0",
     "@deck.gl/mapbox": "^8.2.7",
     "@mapbox/mapbox-gl-draw": "^1.1.2",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "concurrently": "^4.1.0",
     "deck.gl": "^8.2.6",

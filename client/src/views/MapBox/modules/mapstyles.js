@@ -101,23 +101,23 @@ let baseLayerConfig = {
 }
 
 let mapLabel = [
-    {
-        label: '在线Google地图',
-        options: [
-            {
-                value: 'googledz',
-                label: '谷歌电子地图'
-            },
-            {
-                value: 'googledx',
-                label: '谷歌地形图'
-            },
-            {
-                value: 'googlewx',
-                label: '谷歌卫星图'
-            }
-        ]
-    },
+    // {
+    //     label: '在线Google地图',
+    //     options: [
+    //         {
+    //             value: 'googledz',
+    //             label: '谷歌电子地图'
+    //         },
+    //         {
+    //             value: 'googledx',
+    //             label: '谷歌地形图'
+    //         },
+    //         {
+    //             value: 'googlewx',
+    //             label: '谷歌卫星图'
+    //         }
+    //     ]
+    // },
     {
         label: '在线天地图',
         options: [

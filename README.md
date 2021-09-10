@@ -11,21 +11,29 @@
 
 ## 1. 效果展示
 **系统登陆**
-![](https://raw.githubusercontent.com/snailgis/vue_webgis/master/client/src/assets/readmeImg/loginPage.png)
+![](http://139.196.99.139/assets/readmeImg/loginPage.png)
 **地图首页，支持Google，天地图，高德，腾讯，Geoq，Arcgis等多源在线网络地图的切换**
 > Google地图公共影像已下架（2021年1月）
 > 调整原有代码view与components的混乱；MapBox地图组件封装，数据图层加载组件，地图底图切换组件；（2021.1.31）
 ---
-![](https://raw.githubusercontent.com/snailgis/vue_webgis/master/client/src/assets/readmeImg/mapHomePage.png)
+![](http://139.196.99.139/assets/readmeImg/mapHomePage.png)
 **3维建筑物地图，基于MapBoxGL加载GeoServer三维建筑物矢量切片**
-![](https://raw.githubusercontent.com/snailgis/vue_webgis/master/client/src/assets/readmeImg/3Dbuilding.png)
+![](http://139.196.99.139/assets/readmeImg/3Dbuilding.png)
+**MapBox自定义底图**
+![](http://139.196.99.139/assets/readmeImg/mapbox01.png)
+**MapBoxgl绘制**
+![](http://139.196.99.139/assets/readmeImg/mapbox_draw.png)
 **MapBoxGL集成deck.gl实现高性能可视化**
-![](https://raw.githubusercontent.com/snailgis/vue_webgis/master/client/src/assets/readmeImg/HexgonMap.png)
+![](http://139.196.99.139/assets/readmeImg/HexgonMap.png)
 
 **openlayers聚合图**
-![](https://raw.githubusercontent.com/snailgis/vue_webgis/master/client/src/assets/readmeImg/openlayerCluster.png)
+![](http://139.196.99.139/assets/readmeImg/openlayerCluster.png)
+**openlayers裁剪地图底图**
+![](http://139.196.99.139/assets/readmeImg/openlayerClip.png)
 
 <!--系统中还有好多好玩的功能等你去发现咯-->
+**arcgis api 4.x**
+![](http://139.196.99.139/assets/readmeImg/arcgisHomePage.png)
 
 <!--后续地图功能正在逐步完善，将尝试使用多种 map api 和集成 gis 相关库-->
 

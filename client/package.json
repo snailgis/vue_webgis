@@ -8,6 +8,7 @@
     "start": "npm run serve"
   },
   "dependencies": {
+    "@cgcs2000/mapbox-gl": "^2.3.0",
     "@deck.gl/mapbox": "^8.2.7",
     "axios": "^0.19.0",
     "core-js": "^2.6.5",
