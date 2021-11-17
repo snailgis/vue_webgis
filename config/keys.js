@@ -1,3 +1,3 @@
 module.exports = {
-    mongooseURI: 'mongodb://139.196.99.139/vue_webgis'
+    mongooseURI: 'mongodb://localhost:27017/vue_webgis'
 } 

@@ -11,29 +11,48 @@
 
 ## 1. 效果展示
 **系统登陆**
-![](http://139.196.99.139/assets/readmeImg/loginPage.png)
+![loginPage.png](https://i.loli.net/2021/11/17/reFpu5ABTdi8zoX.png)
+
+---
+
 **地图首页，支持Google，天地图，高德，腾讯，Geoq，Arcgis等多源在线网络地图的切换**
 > Google地图公共影像已下架（2021年1月）
 > 调整原有代码view与components的混乱；MapBox地图组件封装，数据图层加载组件，地图底图切换组件；（2021.1.31）
+
+![mapHomePage.png](https://i.loli.net/2021/11/17/fSaKQCoZXeH3uzJ.png)
+
 ---
-![](http://139.196.99.139/assets/readmeImg/mapHomePage.png)
+
 **3维建筑物地图，基于MapBoxGL加载GeoServer三维建筑物矢量切片**
-![](http://139.196.99.139/assets/readmeImg/3Dbuilding.png)
+![3Dbuilding.png](https://i.loli.net/2021/11/17/NYyTzPI2LD4cURE.png)
+
+---
+
 **MapBox自定义底图**
-![](http://139.196.99.139/assets/readmeImg/mapbox01.png)
+![mapbox01.png](https://i.loli.net/2021/11/17/3eMyHIYaRXp6FfV.png)
+
+---
 **MapBoxgl绘制**
-![](http://139.196.99.139/assets/readmeImg/mapbox_draw.png)
+![mapbox_draw.png](https://i.loli.net/2021/11/17/6JMmO9l2QHEuvVN.png)
+
+---
 **MapBoxGL集成deck.gl实现高性能可视化**
-![](http://139.196.99.139/assets/readmeImg/HexgonMap.png)
+![HexgonMap.png](https://i.loli.net/2021/11/17/8qBGaTFMpy6Z7HX.png)
+
+---
 
 **openlayers聚合图**
-![](http://139.196.99.139/assets/readmeImg/openlayerCluster.png)
+![openlayerCluster.png](https://i.loli.net/2021/11/17/lR9tv6hEbdAXDJK.png)
+
+---
 **openlayers裁剪地图底图**
-![](http://139.196.99.139/assets/readmeImg/openlayerClip.png)
+![openlayerClip.png](https://i.loli.net/2021/11/17/ilWN9UVp7hSewat.png)
+
+---
 
 <!--系统中还有好多好玩的功能等你去发现咯-->
 **arcgis api 4.x**
-![](http://139.196.99.139/assets/readmeImg/arcgisHomePage.png)
+![arcgisHomePage.png](https://i.loli.net/2021/11/17/OCAEdesBVj4Rg7v.png)
 
 <!--后续地图功能正在逐步完善，将尝试使用多种 map api 和集成 gis 相关库-->
 

@@ -17,6 +17,8 @@
     "esri-loader": "^2.9.2",
     "jwt-decode": "^2.2.0",
     "mapbox-gl": "^1.6.1",
+    "mapbox-gl-circle": "^1.6.5",
+    "mapbox-gl-draw-circle": "^1.1.1",
     "ol": "^5.3.3",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
